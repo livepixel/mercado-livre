@@ -1,0 +1,17 @@
+{
+    "name": "livepixel/mercado-livre",
+    "description": "Mercado Livre API SDK for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rodrigo Maia",
+            "email": "rodurma@gmail.com"
+        }
+    ], 
+    "autoload": {
+        "psr-4": {
+            "Livepixel\\MercadoLivre\\": "src/"
+        }
+    },
+    "require": {}
+}
