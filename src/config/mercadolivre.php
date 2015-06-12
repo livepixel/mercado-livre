@@ -1,6 +1,11 @@
 <?php
 
 return [
+
+	/*
+	* Para criar seu client_id e client_secret acesse 
+	* http://applications.mercadolibre.com
+	*/
 	
 	'client_id' => env('ML_APP_ID', ''), 
 	

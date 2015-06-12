@@ -1,7 +1,5 @@
 <?php namespace Livepixel\MercadoLivre;
 
-// author: Rodrigo Maia <rodurma@gmail.com> :D
-
 class Meli {
 
     /**
