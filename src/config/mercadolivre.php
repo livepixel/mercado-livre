@@ -18,7 +18,7 @@ return [
 	], 
 
 	'curl_opts' => [
-		CURLOPT_USERAGENT => "MELI-PHP-SDK-1.0.0",
+		CURLOPT_USERAGENT => "MELI-PHP-SDK-1.1.0",
         CURLOPT_SSL_VERIFYPEER => true,
         CURLOPT_CONNECTTIMEOUT => 10,
         CURLOPT_RETURNTRANSFER => 1,
