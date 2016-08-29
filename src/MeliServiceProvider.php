@@ -27,6 +27,10 @@ class MeliServiceProvider extends ServiceProvider
 		$this->app->singleton('meli', function(){
 			return new Meli($this->client_id, $this->client_secret, $this->urls, $this->curl_opts);
 		});
+		
+	        $this->app->singleton('\Livepixel\MercadoLivre\Contracts', function(){
+	            return new Meli($this->client_id, $this->client_secret, $this->urls, $this->curl_opts);
+	        });
 	}
 
 }
