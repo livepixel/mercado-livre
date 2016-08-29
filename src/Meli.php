@@ -1,6 +1,6 @@
 <?php namespace Livepixel\MercadoLivre;
 
-class Meli {
+class Meli implements Contracts {
 
     /**
      * Configuration for urls
