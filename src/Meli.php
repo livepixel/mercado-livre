@@ -115,6 +115,13 @@ class Meli implements Contracts {
             return $request;
         }
     }
+	
+    /**
+    * Set refresh token
+    */
+    public function setRefreshToken($refresh_token){
+    	$this->refresh_token = $refresh_token;
+    }
 
     /**
      * Execute a POST Request to create a new AccessToken from a existent refresh_token
