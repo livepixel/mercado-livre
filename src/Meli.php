@@ -101,7 +101,7 @@ class Meli implements Contracts {
             CURLOPT_POSTFIELDS => $body
         );
     
-        $request = $this->execute(self::$OAUTH_URL, $opts);
+        $request = $this->execute(self::$OAUTH_URL . '?' . http_build_query($body), $opts);
 
         if($request["httpCode"] == 200) {             
             $this->access_token = $request["body"]->access_token;
@@ -144,7 +144,7 @@ class Meli implements Contracts {
                 CURLOPT_POSTFIELDS => $body
             );
         
-            $request = $this->execute(self::$OAUTH_URL, $opts);
+            $request = $this->execute(self::$OAUTH_URL . '?' . http_build_query($body), $opts);
 
             if($request["httpCode"] == 200) {             
                 $this->access_token = $request["body"]->access_token;
